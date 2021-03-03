@@ -4,11 +4,8 @@ include 'autoload.php';
 use PptConverter\LibreConverter;
 use PptConverter\GetOutPdfController;
 
-$tempDir = 'temp';
-
-$uploaddir = __DIR__ . '/' . $tempDir . '/upload/';
-$file = pathinfo($_FILES['file']['name']);
-$fileName = time() . '.' . $file['extension'];
+$uploaddir = __DIR__ . '/temp/upload/';
+$fileName = time() . '.' . pathinfo($_FILES['file']['name'])['extension'];
 
 if(!file_exists($uploaddir)) mkdir($uploaddir, 0777, true);
 
