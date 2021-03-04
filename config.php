@@ -1,6 +1,6 @@
 <?php
 return [
-    'fileNameTemplate' => 'slide.jpg',
+    'fileNameTemplate' => 'slide-%02d.jpg',
     'paths' => [
         'pdf'       => __DIR__ . '/pdf/',
         'images'    => __DIR__ . '/images/',
