@@ -4,6 +4,8 @@ include 'autoload.php';
 use PptConverter\LibreConverter;
 use PptConverter\GetOutPdfController;
 
+ini_set('memory_limit', '100M');
+
 $uploaddir = __DIR__ . '/temp/upload/';
 $fileName = time() . '.' . pathinfo($_FILES['file']['name'])['extension'];
 

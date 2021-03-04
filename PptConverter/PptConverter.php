@@ -54,6 +54,8 @@ class PptConverter {
      */
     public function convert(string $fileName)
     {
+        ini_set('memory_limit', '100M');
+
         $this->name = pathinfo($fileName)['filename'];
         $extension = pathinfo($fileName)['extension'];
 
